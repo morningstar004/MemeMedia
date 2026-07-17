@@ -3,7 +3,7 @@
     dir="C:\Users\PRANJAL_01\Downloads\NothingSoundWidget\MemeMedia\app"
     name=":app"
     type="APP"
-    maven="NothingSoundWidget:app:unspecified"
+    maven="Meme Media:app:unspecified"
     agpVersion="8.4.1"
     buildFolder="build"
     bootClassPath="C:\Users\PRANJAL_01\AppData\Local\Android\Sdk\platforms\android-34\android.jar;C:\Users\PRANJAL_01\AppData\Local\Android\Sdk\build-tools\34.0.0\core-lambda-stubs.jar"

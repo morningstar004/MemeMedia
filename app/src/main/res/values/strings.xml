@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Sound Widget</string>
+    <string name="app_name">Meme Media</string>
     <string name="widget_description">Tap for the faah sound. Swipe to flip through meme sounds, or add your own.</string>
     <string name="action_add_sound">+ Add Sound</string>
     <string name="manage_sounds_title">Manage Sounds</string>
-    <string name="hint_pick_audio">Pick an audio file</string>
     <string name="hint_name_sound">Name this sound</string>
+    <string name="sound_tile_label">Sound</string>
+    <string name="content_description_play_stop">Play or stop sound</string>
+    <string name="content_description_remove">Remove sound</string>
 </resources>

@@ -3,6 +3,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Lint Report</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-indigo.min.css" />
@@ -69,7 +70,8 @@ pre.errorlines {
     font-family: monospace;
     border: 1px solid #e0e0e0;
     line-height: 0.9rem;
-    font-size: 0.9rem;    padding: 1px 0px 1px; 1px;
+    font-size: 0.9rem;
+    padding: 1px 0px 1px 1px;
     overflow: scroll;
 }
 .prefix {
@@ -177,24 +179,18 @@ document.getElementById(id).style.display = 'none';
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Lint Report: 22 warnings</span>
+      <span class="mdl-layout-title">Lint Report: 6 warnings</span>
       <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Fri Jul 17 20:18:45 IST 2026 by AGP (8.4.1)</nav>
+      <nav class="mdl-navigation mdl-layout--large-screen-only">Check performed at Fri Jul 17 20:31:38 IST 2026 by AGP (8.4.1)</nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Issue Types</span>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="#overview"><i class="material-icons">dashboard</i>Overview</a>
-      <a class="mdl-navigation__link" href="#UnusedAttribute"><i class="material-icons warning-icon">warning</i>Attribute unused on older versions (2)</a>
       <a class="mdl-navigation__link" href="#GradleDependency"><i class="material-icons warning-icon">warning</i>Obsolete Gradle Dependency (4)</a>
-      <a class="mdl-navigation__link" href="#DiscouragedApi"><i class="material-icons warning-icon">warning</i>Using discouraged APIs (1)</a>
       <a class="mdl-navigation__link" href="#ObsoleteSdkInt"><i class="material-icons warning-icon">warning</i>Obsolete SDK_INT Version Check (1)</a>
-      <a class="mdl-navigation__link" href="#Overdraw"><i class="material-icons warning-icon">warning</i>Overdraw: Painting regions more than once (1)</a>
-      <a class="mdl-navigation__link" href="#UnusedResources"><i class="material-icons warning-icon">warning</i>Unused resources (7)</a>
-      <a class="mdl-navigation__link" href="#UselessParent"><i class="material-icons warning-icon">warning</i>Unnecessary parent layout (1)</a>
-      <a class="mdl-navigation__link" href="#ContentDescription"><i class="material-icons warning-icon">warning</i>Image without <code>contentDescription</code> (1)</a>
-      <a class="mdl-navigation__link" href="#HardcodedText"><i class="material-icons warning-icon">warning</i>Hardcoded text (4)</a>
+      <a class="mdl-navigation__link" href="#MergeRootFrame"><i class="material-icons warning-icon">warning</i>FrameLayout can be replaced with <code>&lt;merge></code> tag (1)</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -210,14 +206,8 @@ document.getElementById(id).style.display = 'none';
 <tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
 </td></tr>
 <tr>
-<td class="countColumn">2</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
-<a href="#UnusedAttribute">UnusedAttribute</a>: Attribute unused on older versions</td></tr>
-<tr>
 <td class="countColumn">4</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
 <a href="#GradleDependency">GradleDependency</a>: Obsolete Gradle Dependency</td></tr>
-<tr>
-<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
-<a href="#DiscouragedApi">DiscouragedApi</a>: Using discouraged APIs</td></tr>
 <tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Performance">Performance</a>
 </td></tr>
 <tr>
@@ -225,23 +215,7 @@ document.getElementById(id).style.display = 'none';
 <a href="#ObsoleteSdkInt">ObsoleteSdkInt</a>: Obsolete SDK_INT Version Check</td></tr>
 <tr>
 <td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
-<a href="#Overdraw">Overdraw</a>: Overdraw: Painting regions more than once</td></tr>
-<tr>
-<td class="countColumn">7</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
-<a href="#UnusedResources">UnusedResources</a>: Unused resources</td></tr>
-<tr>
-<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
-<a href="#UselessParent">UselessParent</a>: Unnecessary parent layout</td></tr>
-<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Accessibility">Accessibility</a>
-</td></tr>
-<tr>
-<td class="countColumn">1</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
-<a href="#ContentDescription">ContentDescription</a>: Image without <code>contentDescription</code></td></tr>
-<tr><td class="countColumn"></td><td class="categoryColumn"><a href="#Internationalization">Internationalization</a>
-</td></tr>
-<tr>
-<td class="countColumn">4</td><td class="issueColumn"><i class="material-icons warning-icon">warning</i>
-<a href="#HardcodedText">HardcodedText</a>: Hardcoded text</td></tr>
+<a href="#MergeRootFrame">MergeRootFrame</a>: FrameLayout can be replaced with <code>&lt;merge></code> tag</td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#ExtraIssues">Included Additional Checks (29)</a>
 </td></tr>
 <tr><td></td><td class="categoryColumn"><a href="#MissingIssues">Disabled Checks (39)</a>
@@ -254,65 +228,7 @@ Dismiss</button>            </div>
             </div>
           </section>
 <a name="Correctness"></a>
-<a name="UnusedAttribute"></a>
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="UnusedAttributeCard" style="display: block;">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Attribute unused on older versions</h2>
-  </div>
-              <div class="mdl-card__supporting-text">
-<div class="issue">
-<div class="warningslist">
-<span class="location"><a href="../../src/main/res/xml/widget_info.xml">../../src/main/res/xml/widget_info.xml</a>:5</span>: <span class="message">Attribute <code>targetCellWidth</code> is only used in API level 31 and higher (current min is 26)</span><br /><pre class="errorlines">
-<span class="lineno">  2 </span><span class="tag">&lt;appwidget-provider</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>
-<span class="lineno">  3 </span>    <span class="prefix">android:</span><span class="attribute">minWidth</span>=<span class="value">"110dp"</span>
-<span class="lineno">  4 </span>    <span class="prefix">android:</span><span class="attribute">minHeight</span>=<span class="value">"110dp"</span>
-<span class="caretline"><span class="lineno">  5 </span>    <span class="warning"><span class="prefix">android:</span><span class="attribute">targetCellWidth</span>=<span class="value">"2"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  6 </span>    <span class="prefix">android:</span><span class="attribute">targetCellHeight</span>=<span class="value">"2"</span>
-<span class="lineno">  7 </span>    <span class="prefix">android:</span><span class="attribute">updatePeriodMillis</span>=<span class="value">"0"</span>
-<span class="lineno">  8 </span>    <span class="prefix">android:</span><span class="attribute">widgetCategory</span>=<span class="value">"home_screen"</span></pre>
-
-<span class="location"><a href="../../src/main/res/xml/widget_info.xml">../../src/main/res/xml/widget_info.xml</a>:6</span>: <span class="message">Attribute <code>targetCellHeight</code> is only used in API level 31 and higher (current min is 26)</span><br /><pre class="errorlines">
-<span class="lineno">  3 </span>    <span class="prefix">android:</span><span class="attribute">minWidth</span>=<span class="value">"110dp"</span>
-<span class="lineno">  4 </span>    <span class="prefix">android:</span><span class="attribute">minHeight</span>=<span class="value">"110dp"</span>
-<span class="lineno">  5 </span>    <span class="prefix">android:</span><span class="attribute">targetCellWidth</span>=<span class="value">"2"</span>
-<span class="caretline"><span class="lineno">  6 </span>    <span class="warning"><span class="prefix">android:</span><span class="attribute">targetCellHeight</span>=<span class="value">"2"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  7 </span>    <span class="prefix">android:</span><span class="attribute">updatePeriodMillis</span>=<span class="value">"0"</span>
-<span class="lineno">  8 </span>    <span class="prefix">android:</span><span class="attribute">widgetCategory</span>=<span class="value">"home_screen"</span>
-<span class="lineno">  9 </span>    <span class="prefix">android:</span><span class="attribute">resizeMode</span>=<span class="value">"none"</span></pre>
-
-</div>
-<div class="metadata"><div class="explanation" id="explanationUnusedAttribute" style="display: none;">
-This check finds attributes set in XML files that were introduced in a version newer than the oldest version targeted by your application (with the <code>minSdkVersion</code> attribute).<br/>
-<br/>
-This is not an error; the application will simply ignore the attribute. However, if the attribute is important to the appearance or functionality of your application, you should consider finding an alternative way to achieve the same result with only available attributes, and then you can optionally create a copy of the layout in a layout-vNN folder which will be used on API NN or higher where you can take advantage of the newer attribute.<br/>
-<br/>
-Note: This check does not only apply to attributes. For example, some tags can be unused too, such as the new <code>&lt;tag></code> element in layouts introduced in API 21.<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
-To suppress this error, use the issue id "UnusedAttribute" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
-<br/></div>
-</div>
-</div>
-<div class="chips">
-<span class="mdl-chip">
-    <span class="mdl-chip__text">UnusedAttribute</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Correctness</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Warning</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Priority 6/10</span>
-</span>
-</div>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationUnusedAttributeLink" onclick="reveal('explanationUnusedAttribute');">
-Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="UnusedAttributeCardLink" onclick="hideid('UnusedAttributeCard');">
-Dismiss</button>            </div>
-            </div>
-          </section><a name="GradleDependency"></a>
+<a name="GradleDependency"></a>
 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="GradleDependencyCard" style="display: block;">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
   <div class="mdl-card__title">
@@ -385,51 +301,6 @@ To suppress this error, use the issue id "GradleDependency" as explained in the 
 Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="GradleDependencyCardLink" onclick="hideid('GradleDependencyCard');">
 Dismiss</button>            </div>
             </div>
-          </section><a name="DiscouragedApi"></a>
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="DiscouragedApiCard" style="display: block;">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Using discouraged APIs</h2>
-  </div>
-              <div class="mdl-card__supporting-text">
-<div class="issue">
-<div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/nothingsound/widget/SoundPlayService.kt">../../src/main/java/com/nothingsound/widget/SoundPlayService.kt</a>:61</span>: <span class="message">Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. <code>R.foo.bar</code>) than by name (e.g. <code>getIdentifier("bar", "foo", null)</code>).</span><br /><pre class="errorlines">
-<span class="lineno">  58 </span>  <span class="keyword">when</span> {
-<span class="lineno">  59 </span>      item?.filePath != <span class="keyword">null</span> -> mp.setDataSource(<span class="keyword">this</span>, Uri.fromFile(java.io.File(item.filePath)))
-<span class="lineno">  60 </span>      item?.resName != <span class="keyword">null</span> -> {
-<span class="caretline"><span class="lineno">  61 </span>          <span class="keyword">val</span> resId = resources.<span class="warning">getIdentifier</span>(item.resName, <span class="string">"raw"</span>, packageName)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  62 </span>          <span class="keyword">if</span> (resId == <span class="number">0</span>) {
-<span class="lineno">  63 </span>              notifyStopped()
-<span class="lineno">  64 </span>              stopSelf()
-</pre>
-
-</div>
-<div class="metadata"><div class="explanation" id="explanationDiscouragedApi" style="display: none;">
-Discouraged APIs are allowed and are not deprecated, but they may be unfit for common use (e.g. due to slow performance or subtle behavior).<br/>To suppress this error, use the issue id "DiscouragedApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
-<br/></div>
-</div>
-</div>
-<div class="chips">
-<span class="mdl-chip">
-    <span class="mdl-chip__text">DiscouragedApi</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Correctness</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Warning</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Priority 2/10</span>
-</span>
-</div>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationDiscouragedApiLink" onclick="reveal('explanationDiscouragedApi');">
-Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="DiscouragedApiCardLink" onclick="hideid('DiscouragedApiCard');">
-Dismiss</button>            </div>
-            </div>
           </section>
 <a name="Performance"></a>
 <a name="ObsoleteSdkInt"></a>
@@ -471,295 +342,47 @@ To suppress this error, use the issue id "ObsoleteSdkInt" as explained in the <a
 Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="ObsoleteSdkIntCardLink" onclick="hideid('ObsoleteSdkIntCard');">
 Dismiss</button>            </div>
             </div>
-          </section><a name="Overdraw"></a>
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="OverdrawCard" style="display: block;">
+          </section><a name="MergeRootFrame"></a>
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="MergeRootFrameCard" style="display: block;">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Overdraw: Painting regions more than once</h2>
+    <h2 class="mdl-card__title-text">FrameLayout can be replaced with &lt;merge> tag</h2>
   </div>
               <div class="mdl-card__supporting-text">
 <div class="issue">
 <div class="warningslist">
-<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:5</span>: <span class="message">Possible overdraw: Root element paints background <code>@color/nothing_black</code> with a theme that also paints a background (inferred theme is <code>@style/Theme_NothingSound</code>)</span><br /><pre class="errorlines">
-<span class="lineno">  2 </span><span class="tag">&lt;FrameLayout</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span>
+<span class="location"><a href="../../src/main/res/layout/activity_main.xml">../../src/main/res/layout/activity_main.xml</a>:2</span>: <span class="message">This <code>&lt;FrameLayout></code> can be replaced with a <code>&lt;merge></code> tag</span><br /><pre class="errorlines">
+<span class="lineno">  1 </span><span class="prologue">&lt;?xml version="1.0" encoding="utf-8"?></span>
+<span class="caretline"><span class="lineno">  2 </span><span class="warning"><span class="tag">&lt;FrameLayout</span><span class="attribute"> </span><span class="prefix">xmlns:</span><span class="attribute">android</span>=<span class="value">"http://schemas.android.com/apk/res/android"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span class="lineno">  3 </span>    <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"match_parent"</span>
-<span class="lineno">  4 </span>    <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"match_parent"</span>
-<span class="caretline"><span class="lineno">  5 </span>    <span class="warning"><span class="prefix">android:</span><span class="attribute">background</span>=<span class="value">"@color/nothing_black"</span></span>>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  6 </span>
-<span class="lineno">  7 </span>    <span class="tag">&lt;LinearLayout</span><span class="attribute">
-</span><span class="lineno">  8 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"match_parent"</span></pre>
-
-</div>
-<div class="metadata"><div class="explanation" id="explanationOverdraw" style="display: none;">
-If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called "overdraw".<br/>
-<br/>
-NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it's currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.<br/>
-<br/>
-If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.<br/>
-<br/>
-Of course it's possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead.<br/>To suppress this error, use the issue id "Overdraw" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
-<br/></div>
-</div>
-</div>
-<div class="chips">
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Overdraw</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Performance</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Warning</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Priority 3/10</span>
-</span>
-</div>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationOverdrawLink" onclick="reveal('explanationOverdraw');">
-Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="OverdrawCardLink" onclick="hideid('OverdrawCard');">
-Dismiss</button>            </div>
-            </div>
-          </section><a name="UnusedResources"></a>
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="UnusedResourcesCard" style="display: block;">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Unused resources</h2>
-  </div>
-              <div class="mdl-card__supporting-text">
-<div class="issue">
-<div class="warningslist">
-<span class="location"><a href="../../src/main/res/raw/airhorn.mp3">../../src/main/res/raw/airhorn.mp3</a></span>: <span class="message">The resource <code>R.raw.airhorn</code> appears to be unused</span><br />
-<span class="location"><a href="../../src/main/res/raw/bruh.mp3">../../src/main/res/raw/bruh.mp3</a></span>: <span class="message">The resource <code>R.raw.bruh</code> appears to be unused</span><br />
-<span class="location"><a href="../../src/main/res/values/colors.xml">../../src/main/res/values/colors.xml</a>:6</span>: <span class="message">The resource <code>R.color.nothing_black_soft</code> appears to be unused</span><br /><pre class="errorlines">
-<span class="lineno">  3 </span>    <span class="comment">&lt;!-- Nothing OS inspired: near-black base, off-white ink, single red accent --></span>
-<span class="lineno">  4 </span>    <span class="tag">&lt;color</span><span class="attribute"> name</span>=<span class="value">"nothing_black"</span>>#000000<span class="tag">&lt;/color></span>
-<span class="lineno">  5 </span>    <span class="tag">&lt;color</span><span class="attribute"> name</span>=<span class="value">"nothing_black_widget"</span>>#1B1B1B<span class="tag">&lt;/color></span>
-<span class="caretline"><span class="lineno">  6 </span>    <span class="tag">&lt;color</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"nothing_black_soft"</span></span>>#141414<span class="tag">&lt;/color></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  7 </span>    <span class="tag">&lt;color</span><span class="attribute"> name</span>=<span class="value">"nothing_grey_ring"</span>>#2B2B2B<span class="tag">&lt;/color></span>
-<span class="lineno">  8 </span>    <span class="tag">&lt;color</span><span class="attribute"> name</span>=<span class="value">"nothing_white"</span>>#F5F5F0<span class="tag">&lt;/color></span>
-<span class="lineno">  9 </span>    <span class="tag">&lt;color</span><span class="attribute"> name</span>=<span class="value">"nothing_grey_text"</span>>#9A9A94<span class="tag">&lt;/color></span></pre>
-
-<span class="location"><a href="../../src/main/res/raw/faah.mp3">../../src/main/res/raw/faah.mp3</a></span>: <span class="message">The resource <code>R.raw.faah</code> appears to be unused</span><br />
-<span class="location"><a href="../../src/main/res/raw/readme_add_sounds_here.txt">../../src/main/res/raw/readme_add_sounds_here.txt</a></span>: <span class="message">The resource <code>R.raw.readme_add_sounds_here</code> appears to be unused</span><br />
-<span class="location"><a href="../../src/main/res/values/strings.xml">../../src/main/res/values/strings.xml</a>:7</span>: <span class="message">The resource <code>R.string.hint_pick_audio</code> appears to be unused</span><br /><pre class="errorlines">
-<span class="lineno">  4 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"widget_description"</span>>Tap for the faah sound. Swipe to flip through meme sounds, or add your own.<span class="tag">&lt;/string></span>
-<span class="lineno">  5 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"action_add_sound"</span>>+ Add Sound<span class="tag">&lt;/string></span>
-<span class="lineno">  6 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"manage_sounds_title"</span>>Manage Sounds<span class="tag">&lt;/string></span>
-<span class="caretline"><span class="lineno">  7 </span>    <span class="tag">&lt;string</span><span class="attribute"> </span><span class="warning"><span class="attribute">name</span>=<span class="value">"hint_pick_audio"</span></span>>Pick an audio file<span class="tag">&lt;/string></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno">  8 </span>    <span class="tag">&lt;string</span><span class="attribute"> name</span>=<span class="value">"hint_name_sound"</span>>Name this sound<span class="tag">&lt;/string></span>
-<span class="lineno">  9 </span><span class="tag">&lt;/resources></span>
-</pre>
-
-<span class="location"><a href="../../src/main/res/raw/vine_boom.mp3">../../src/main/res/raw/vine_boom.mp3</a></span>: <span class="message">The resource <code>R.raw.vine_boom</code> appears to be unused</span><br />
-</div>
-<div class="metadata"><div class="explanation" id="explanationUnusedResources" style="display: none;">
-Unused resources make applications larger and slow down builds.<br/>
-<br/>
-<br/>
-The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.<br/>
-<br/>
-You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.<br/>
-,<br/>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
-To suppress this error, use the issue id "UnusedResources" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
-<br/></div>
-</div>
-</div>
-<div class="chips">
-<span class="mdl-chip">
-    <span class="mdl-chip__text">UnusedResources</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Performance</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Warning</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Priority 3/10</span>
-</span>
-</div>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationUnusedResourcesLink" onclick="reveal('explanationUnusedResources');">
-Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="UnusedResourcesCardLink" onclick="hideid('UnusedResourcesCard');">
-Dismiss</button>            </div>
-            </div>
-          </section><a name="UselessParent"></a>
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="UselessParentCard" style="display: block;">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Unnecessary parent layout</h2>
-  </div>
-              <div class="mdl-card__supporting-text">
-<div class="issue">
-<div class="warningslist">
-<span class="location"><a href="../../src/main/res/layout/widget_stack_item.xml">../../src/main/res/layout/widget_stack_item.xml</a>:9</span>: <span class="message">This <code>LinearLayout</code> layout or its <code>FrameLayout</code> parent is unnecessary; transfer the <code>background</code> attribute to the other view</span><br /><pre class="errorlines">
-<span class="lineno">  6 </span>    <span class="prefix">android:</span><span class="attribute">background</span>=<span class="value">"@drawable/widget_circle_bg"</span>
-<span class="lineno">  7 </span>    <span class="prefix">android:</span><span class="attribute">color</span>=<span class="value">"@color/nothing_black_widget"</span>>
-<span class="lineno">  8 </span>
-<span class="caretline"><span class="lineno">  9 </span>    <span class="tag">&lt;</span><span class="warning"><span class="tag">LinearLayout</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
-</span><span class="lineno"> 10 </span><span class="attribute">        </span><span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
-<span class="lineno"> 11 </span>        <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
-<span class="lineno"> 12 </span>        <span class="prefix">android:</span><span class="attribute">layout_gravity</span>=<span class="value">"center"</span></pre>
-
-</div>
-<div class="metadata"><div class="explanation" id="explanationUselessParent" style="display: none;">
-A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy.<br/>To suppress this error, use the issue id "UselessParent" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
-<br/></div>
-</div>
-</div>
-<div class="chips">
-<span class="mdl-chip">
-    <span class="mdl-chip__text">UselessParent</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Performance</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Warning</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Priority 2/10</span>
-</span>
-</div>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationUselessParentLink" onclick="reveal('explanationUselessParent');">
-Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="UselessParentCardLink" onclick="hideid('UselessParentCard');">
-Dismiss</button>            </div>
-            </div>
-          </section>
-<a name="Accessibility"></a>
-<a name="ContentDescription"></a>
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="ContentDescriptionCard" style="display: block;">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Image without contentDescription</h2>
-  </div>
-              <div class="mdl-card__supporting-text">
-<div class="issue">
-<div class="warningslist">
-<span class="location"><a href="../../src/main/res/layout/widget_stack_item.xml">../../src/main/res/layout/widget_stack_item.xml</a>:16</span>: <span class="message">Missing <code>contentDescription</code> attribute on image</span><br /><pre class="errorlines">
-<span class="lineno"> 13 </span>        <span class="prefix">android:</span><span class="attribute">gravity</span>=<span class="value">"center"</span>
-<span class="lineno"> 14 </span>        <span class="prefix">android:</span><span class="attribute">orientation</span>=<span class="value">"vertical"</span>>
-<span class="lineno"> 15 </span>
-<span class="caretline"><span class="lineno"> 16 </span>        <span class="tag">&lt;</span><span class="warning"><span class="tag">ImageView</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="attribute">
-</span><span class="lineno"> 17 </span><span class="attribute">            </span><span class="prefix">android:</span><span class="attribute">id</span>=<span class="value">"@+id/tile_icon"</span>
-<span class="lineno"> 18 </span>            <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"56dp"</span>
-<span class="lineno"> 19 </span>            <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"56dp"</span></pre>
-
-</div>
-<div class="metadata"><div class="explanation" id="explanationContentDescription" style="display: none;">
-Non-textual widgets like ImageViews and ImageButtons should use the <code>contentDescription</code> attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.<br/>
-<br/>
-Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, set their descriptions to <code>@null</code>. If your app's minSdkVersion is 16 or higher, you can instead set these graphical elements' <code>android:importantForAccessibility</code> attributes to <code>no</code>.<br/>
-<br/>
-Note that for text fields, you should not set both the <code>hint</code> and the <code>contentDescription</code> attributes since the hint will never be shown. Just set the <code>hint</code>.<br/><div class="moreinfo">More info: <a href="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases">https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases</a>
-</div>Note: This issue has an associated quickfix operation in Android Studio and IntelliJ IDEA.<br>
-To suppress this error, use the issue id "ContentDescription" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
-<br/></div>
-</div>
-</div>
-<div class="chips">
-<span class="mdl-chip">
-    <span class="mdl-chip__text">ContentDescription</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Accessibility</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Warning</span>
-</span>
-<span class="mdl-chip">
-    <span class="mdl-chip__text">Priority 3/10</span>
-</span>
-</div>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationContentDescriptionLink" onclick="reveal('explanationContentDescription');">
-Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="ContentDescriptionCardLink" onclick="hideid('ContentDescriptionCard');">
-Dismiss</button>            </div>
-            </div>
-          </section>
-<a name="Internationalization"></a>
-<a name="HardcodedText"></a>
-<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="HardcodedTextCard" style="display: block;">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Hardcoded text</h2>
-  </div>
-              <div class="mdl-card__supporting-text">
-<div class="issue">
-<div class="warningslist">
-<span class="location"><a href="../../src/main/res/layout/item_sound_row.xml">../../src/main/res/layout/item_sound_row.xml</a>:25</span>: <span class="message">Hardcoded string "Play/Stop sound", should use <code>@string</code> resource</span><br /><pre class="errorlines">
-<span class="lineno"> 22 </span>        <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"40dp"</span>
-<span class="lineno"> 23 </span>        <span class="prefix">android:</span><span class="attribute">src</span>=<span class="value">"@drawable/ic_play_circle"</span>
-<span class="lineno"> 24 </span>        <span class="prefix">android:</span><span class="attribute">padding</span>=<span class="value">"8dp"</span>
-<span class="caretline"><span class="lineno"> 25 </span>        <span class="warning"><span class="prefix">android:</span><span class="attribute">contentDescription</span>=<span class="value">"Play/Stop sound"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 26 </span>        <span class="prefix">android:</span><span class="attribute">background</span>=<span class="value">"?attr/selectableItemBackgroundBorderless"</span> />
-<span class="lineno"> 27 </span>
-<span class="lineno"> 28 </span>    <span class="tag">&lt;ImageView</span></pre>
-
-<span class="location"><a href="../../src/main/res/layout/item_sound_row.xml">../../src/main/res/layout/item_sound_row.xml</a>:34</span>: <span class="message">Hardcoded string "Remove sound", should use <code>@string</code> resource</span><br /><pre class="errorlines">
-<span class="lineno"> 31 </span>        <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"40dp"</span>
-<span class="lineno"> 32 </span>        <span class="prefix">android:</span><span class="attribute">src</span>=<span class="value">"@drawable/ic_remove_circle"</span>
-<span class="lineno"> 33 </span>        <span class="prefix">android:</span><span class="attribute">padding</span>=<span class="value">"8dp"</span>
-<span class="caretline"><span class="lineno"> 34 </span>        <span class="warning"><span class="prefix">android:</span><span class="attribute">contentDescription</span>=<span class="value">"Remove sound"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 35 </span>        <span class="prefix">android:</span><span class="attribute">background</span>=<span class="value">"?attr/selectableItemBackgroundBorderless"</span> />
-<span class="lineno"> 36 </span>
-<span class="lineno"> 37 </span><span class="tag">&lt;/LinearLayout></span></pre>
-
-<span class="location"><a href="../../src/main/res/layout/widget_sound.xml">../../src/main/res/layout/widget_sound.xml</a>:22</span>: <span class="message">Hardcoded string "Sound Widget", should use <code>@string</code> resource</span><br /><pre class="errorlines">
-<span class="lineno"> 19 </span>        <span class="prefix">android:</span><span class="attribute">layout_width</span>=<span class="value">"wrap_content"</span>
-<span class="lineno"> 20 </span>        <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"wrap_content"</span>
-<span class="lineno"> 21 </span>        <span class="prefix">android:</span><span class="attribute">layout_gravity</span>=<span class="value">"center"</span>
-<span class="caretline"><span class="lineno"> 22 </span>        <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"Sound Widget"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 23 </span>        <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"@color/nothing_grey_text"</span> />
-<span class="lineno"> 24 </span>
-<span class="lineno"> 25 </span><span class="tag">&lt;/FrameLayout></span></pre>
-
-<span class="location"><a href="../../src/main/res/layout/widget_stack_item.xml">../../src/main/res/layout/widget_stack_item.xml</a>:32</span>: <span class="message">Hardcoded string "SOUND", should use <code>@string</code> resource</span><br /><pre class="errorlines">
-<span class="lineno"> 29 </span>            <span class="prefix">android:</span><span class="attribute">gravity</span>=<span class="value">"center"</span>
-<span class="lineno"> 30 </span>            <span class="prefix">android:</span><span class="attribute">letterSpacing</span>=<span class="value">"0.1"</span>
-<span class="lineno"> 31 </span>            <span class="prefix">android:</span><span class="attribute">maxLines</span>=<span class="value">"1"</span>
-<span class="caretline"><span class="lineno"> 32 </span>            <span class="warning"><span class="prefix">android:</span><span class="attribute">text</span>=<span class="value">"SOUND"</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span class="lineno"> 33 </span>            <span class="prefix">android:</span><span class="attribute">textAllCaps</span>=<span class="value">"true"</span>
-<span class="lineno"> 34 </span>            <span class="prefix">android:</span><span class="attribute">textColor</span>=<span class="value">"@color/nothing_white"</span>
-<span class="lineno"> 35 </span>            <span class="prefix">android:</span><span class="attribute">textSize</span>=<span class="value">"14sp"</span> />
+<span class="lineno">  4 </span>    <span class="prefix">android:</span><span class="attribute">layout_height</span>=<span class="value">"match_parent"</span>>
 </pre>
 
 </div>
-<div class="metadata"><div class="explanation" id="explanationHardcodedText" style="display: none;">
-Hardcoding text attributes directly in layout files is bad for several reasons:<br/>
-<br/>
-* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)<br/>
-<br/>
-* The application cannot be translated to other languages by just adding new translations for existing string resources.<br/>
-<br/>
-There are quickfixes to automatically extract this hardcoded string into a resource lookup.<br/>To suppress this error, use the issue id "HardcodedText" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
+<div class="metadata"><div class="explanation" id="explanationMergeRootFrame" style="display: none;">
+If a <code>&lt;FrameLayout></code> is the root of a layout and does not provide background or padding etc, it can often be replaced with a <code>&lt;merge></code> tag which is slightly more efficient. Note that this depends on context, so make sure you understand how the <code>&lt;merge></code> tag works before proceeding.<br/><div class="moreinfo">More info: <a href="https://android-developers.googleblog.com/2009/03/android-layout-tricks-3-optimize-by.html">https://android-developers.googleblog.com/2009/03/android-layout-tricks-3-optimize-by.html</a>
+</div>To suppress this error, use the issue id "MergeRootFrame" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
 <br/></div>
 </div>
 </div>
 <div class="chips">
 <span class="mdl-chip">
-    <span class="mdl-chip__text">HardcodedText</span>
+    <span class="mdl-chip__text">MergeRootFrame</span>
 </span>
 <span class="mdl-chip">
-    <span class="mdl-chip__text">Internationalization</span>
+    <span class="mdl-chip__text">Performance</span>
 </span>
 <span class="mdl-chip">
     <span class="mdl-chip__text">Warning</span>
 </span>
 <span class="mdl-chip">
-    <span class="mdl-chip__text">Priority 5/10</span>
+    <span class="mdl-chip__text">Priority 4/10</span>
 </span>
 </div>
               </div>
               <div class="mdl-card__actions mdl-card--border">
-<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationHardcodedTextLink" onclick="reveal('explanationHardcodedText');">
-Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="HardcodedTextCardLink" onclick="hideid('HardcodedTextCard');">
+<button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="explanationMergeRootFrameLink" onclick="reveal('explanationMergeRootFrame');">
+Explain</button><button class="mdl-button mdl-js-button mdl-js-ripple-effect" id="MergeRootFrameCardLink" onclick="hideid('MergeRootFrameCard');">
 Dismiss</button>            </div>
             </div>
           </section>

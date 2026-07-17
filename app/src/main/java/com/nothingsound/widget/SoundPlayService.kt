@@ -58,7 +58,7 @@ class SoundPlayService : Service() {
             when {
                 item?.filePath != null -> mp.setDataSource(this, Uri.fromFile(java.io.File(item.filePath)))
                 item?.resName != null -> {
-                    val resId = resources.getIdentifier(item.resName, "raw", packageName)
+                    val resId = rawResourceId(item.resName)
                     if (resId == 0) {
                         notifyStopped()
                         stopSelf()
@@ -100,6 +100,14 @@ class SoundPlayService : Service() {
 
     private fun notifyStopped() {
         sendBroadcast(Intent(ACTION_SOUND_STOPPED).setPackage(packageName))
+    }
+
+    private fun rawResourceId(resName: String): Int = when (resName) {
+        "faah" -> R.raw.faah
+        "bruh" -> R.raw.bruh
+        "vine_boom" -> R.raw.vine_boom
+        "airhorn" -> R.raw.airhorn
+        else -> 0
     }
 
     override fun onDestroy() {

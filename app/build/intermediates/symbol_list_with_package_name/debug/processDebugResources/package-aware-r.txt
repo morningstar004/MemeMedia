@@ -1991,7 +1991,6 @@ color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color nothing_black
-color nothing_black_soft
 color nothing_black_widget
 color nothing_grey_ring
 color nothing_grey_text
@@ -3691,7 +3690,6 @@ plurals mtrl_badge_content_description
 raw airhorn
 raw bruh
 raw faah
-raw readme_add_sounds_here
 raw vine_boom
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -3741,6 +3739,8 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string content_description_play_stop
+string content_description_remove
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -3748,7 +3748,6 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string hint_name_sound
-string hint_pick_audio
 string icon_content_description
 string item_view_role_description
 string m3_exceed_max_badge_text_suffix
@@ -3863,6 +3862,7 @@ string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string sound_tile_label
 string status_bar_notification_info_overflow
 string widget_description
 style AlertDialog_AppCompat

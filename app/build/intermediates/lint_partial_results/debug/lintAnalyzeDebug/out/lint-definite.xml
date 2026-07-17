@@ -2,124 +2,12 @@
 <incidents format="6" by="lint 8.4.1" type="incidents">
 
     <incident
-        id="HardcodedText"
-        severity="warning"
-        message="Hardcoded string &quot;Play/Stop sound&quot;, should use `@string` resource">
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_sound_row.xml"
-            line="25"
-            column="9"
-            startOffset="831"
-            endLine="25"
-            endColumn="53"
-            endOffset="875"/>
-    </incident>
-
-    <incident
-        id="HardcodedText"
-        severity="warning"
-        message="Hardcoded string &quot;Remove sound&quot;, should use `@string` resource">
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_sound_row.xml"
-            line="34"
-            column="9"
-            startOffset="1162"
-            endLine="34"
-            endColumn="50"
-            endOffset="1203"/>
-    </incident>
-
-    <incident
-        id="HardcodedText"
-        severity="warning"
-        message="Hardcoded string &quot;Sound Widget&quot;, should use `@string` resource">
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/widget_sound.xml"
-            line="22"
-            column="9"
-            startOffset="747"
-            endLine="22"
-            endColumn="36"
-            endOffset="774"/>
-    </incident>
-
-    <incident
-        id="UselessParent"
-        severity="warning"
-        message="This `LinearLayout` layout or its `FrameLayout` parent is unnecessary; transfer the `background` attribute to the other view">
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/widget_stack_item.xml"
-            line="9"
-            column="6"
-            startOffset="323"
-            endLine="9"
-            endColumn="18"
-            endOffset="335"/>
-    </incident>
-
-    <incident
-        id="ContentDescription"
-        severity="warning"
-        message="Missing `contentDescription` attribute on image">
-        <fix-alternatives>
-            <fix-attribute
-                description="Set contentDescription"
-                namespace="http://schemas.android.com/apk/res/android"
-                attribute="contentDescription"
-                value="TODO"
-                point="4"
-                mark="0"/>
-            <fix-attribute
-                description="Set importantForAccessibility=&quot;no&quot;"
-                namespace="http://schemas.android.com/apk/res/android"
-                attribute="importantForAccessibility"
-                value="no"/>
-        </fix-alternatives>
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/widget_stack_item.xml"
-            line="16"
-            column="10"
-            startOffset="548"
-            endLine="16"
-            endColumn="19"
-            endOffset="557"/>
-    </incident>
-
-    <incident
-        id="HardcodedText"
-        severity="warning"
-        message="Hardcoded string &quot;SOUND&quot;, should use `@string` resource">
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/widget_stack_item.xml"
-            line="32"
-            column="13"
-            startOffset="1134"
-            endLine="32"
-            endColumn="33"
-            endOffset="1154"/>
-    </incident>
-
-    <incident
         id="ObsoleteSdkInt"
         severity="warning"
         message="This folder configuration (`v26`) is unnecessary; `minSdkVersion` is 26. Merge all the resources in this folder into `mipmap-anydpi`.">
         <fix-data file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26" folderName="mipmap-anydpi" requiresApi="26"/>
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26"/>
-    </incident>
-
-    <incident
-        id="DiscouragedApi"
-        severity="warning"
-        message="Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. `R.foo.bar`) than by name (e.g. `getIdentifier(&quot;bar&quot;, &quot;foo&quot;, null)`).">
-        <location
-            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/nothingsound/widget/SoundPlayService.kt"
-            line="61"
-            column="43"
-            startOffset="1875"
-            endLine="61"
-            endColumn="56"
-            endOffset="1888"/>
     </incident>
 
     <incident
@@ -203,17 +91,17 @@
     </incident>
 
     <incident
-        id="Overdraw"
+        id="MergeRootFrame"
         severity="warning"
-        message="Possible overdraw: Root element paints background `@color/nothing_black` with a theme that also paints a background (inferred theme is `@style/Theme_NothingSound`)">
+        message="This `&lt;FrameLayout>` can be replaced with a `&lt;merge>` tag">
         <location
             file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
-            line="5"
-            column="5"
-            startOffset="196"
-            endLine="5"
-            endColumn="46"
-            endOffset="237"/>
+            line="2"
+            column="1"
+            startOffset="39"
+            endLine="48"
+            endColumn="15"
+            endOffset="1695"/>
     </incident>
 
 </incidents>

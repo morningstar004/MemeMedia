@@ -1,7 +1,6 @@
 R_DEF: Internal format may change without notice
 local
 color nothing_black
-color nothing_black_soft
 color nothing_black_widget
 color nothing_grey_ring
 color nothing_grey_text
@@ -39,13 +38,14 @@ mipmap ic_launcher_round
 raw airhorn
 raw bruh
 raw faah
-raw readme_add_sounds_here
 raw vine_boom
 string action_add_sound
 string app_name
+string content_description_play_stop
+string content_description_remove
 string hint_name_sound
-string hint_pick_audio
 string manage_sounds_title
+string sound_tile_label
 string widget_description
 style Theme.NothingSound
 xml widget_info

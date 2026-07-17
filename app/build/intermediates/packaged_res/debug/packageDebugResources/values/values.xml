@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="nothing_black">#000000</color>
-    <color name="nothing_black_soft">#141414</color>
     <color name="nothing_black_widget">#1B1B1B</color>
     <color name="nothing_grey_ring">#2B2B2B</color>
     <color name="nothing_grey_text">#9A9A94</color>
     <color name="nothing_red">#D4231E</color>
     <color name="nothing_white">#F5F5F0</color>
     <string name="action_add_sound">+ Add Sound</string>
-    <string name="app_name">Sound Widget</string>
+    <string name="app_name">Meme Media</string>
+    <string name="content_description_play_stop">Play or stop sound</string>
+    <string name="content_description_remove">Remove sound</string>
     <string name="hint_name_sound">Name this sound</string>
-    <string name="hint_pick_audio">Pick an audio file</string>
     <string name="manage_sounds_title">Manage Sounds</string>
+    <string name="sound_tile_label">Sound</string>
     <string name="widget_description">Tap for the faah sound. Swipe to flip through meme sounds, or add your own.</string>
     <style name="Theme.NothingSound" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@color/nothing_black</item>

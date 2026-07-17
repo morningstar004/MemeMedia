@@ -22,7 +22,7 @@
         android:layout_height="40dp"
         android:src="@drawable/ic_play_circle"
         android:padding="8dp"
-        android:contentDescription="Play/Stop sound"
+        android:contentDescription="@string/content_description_play_stop"
         android:background="?attr/selectableItemBackgroundBorderless" />
 
     <ImageView
@@ -31,7 +31,7 @@
         android:layout_height="40dp"
         android:src="@drawable/ic_remove_circle"
         android:padding="8dp"
-        android:contentDescription="Remove sound"
+        android:contentDescription="@string/content_description_remove"
         android:background="?attr/selectableItemBackgroundBorderless" />
 
 </LinearLayout>

@@ -1,39 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/stack_item_root"
     android:layout_width="150dp"
     android:layout_height="150dp"
     android:background="@drawable/widget_circle_bg"
-    android:color="@color/nothing_black_widget">
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/tile_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_dot_wave" />
+
+    <TextView
+        android:id="@+id/tile_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:ellipsize="marquee"
         android:gravity="center"
-        android:orientation="vertical">
+        android:letterSpacing="0.1"
+        android:maxLines="1"
+        android:text="@string/sound_tile_label"
+        android:textAllCaps="true"
+        android:textColor="@color/nothing_white"
+        android:textSize="14sp" />
 
-        <ImageView
-            android:id="@+id/tile_icon"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_dot_wave" />
-
-        <TextView
-            android:id="@+id/tile_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:ellipsize="marquee"
-            android:gravity="center"
-            android:letterSpacing="0.1"
-            android:maxLines="1"
-            android:text="SOUND"
-            android:textAllCaps="true"
-            android:textColor="@color/nothing_white"
-            android:textSize="14sp" />
-
-    </LinearLayout>
-
-</FrameLayout>
+</LinearLayout>

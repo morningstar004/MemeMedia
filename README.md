@@ -1,6 +1,12 @@
-# MemeMedia
+# Meme Media
 
-MemeMedia is an Android home-screen soundboard with a compact, Nothing OS-inspired 2×2 widget. Flip through bundled meme sounds, play a sound without opening the app, and add or remove personal audio files from the companion screen.
+Meme Media is an Android home-screen soundboard with a compact, Nothing OS-inspired 2×2 widget. Flip through bundled meme sounds, play a sound without opening the app, and add or remove personal audio files from the companion screen.
+
+## Download for Android
+
+[Download the latest debug APK](https://github.com/morningstar004/MemeMedia/raw/refs/heads/main/app/build/outputs/apk/debug/app-debug.apk)
+
+After downloading, open the APK on your Android device and allow installation from your browser or file manager if Android asks.
 
 ## Features
 
@@ -19,7 +25,7 @@ MemeMedia is an Android home-screen soundboard with a compact, Nothing OS-inspir
 
 ## Quick start
 
-1. Open this `MemeMedia` folder in Android Studio and allow Gradle to sync.
+1. Open this `Meme Media` project folder in Android Studio and allow Gradle to sync.
 2. Select the `app` run configuration and run it on an API 26+ device or emulator.
 3. Long-press the launcher home screen, choose **Widgets**, then drag **Sound Widget** onto the home screen.
 4. Tap the current tile to play it. Swipe the widget to move through the sounds.
