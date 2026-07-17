@@ -1,61 +1,63 @@
-# Nothing-style Sound Widget
+# MemeMedia
 
-A 2×2 circular home-screen widget: tap it and it plays a "faah" sound; swipe
-up/down and it flips through meme sounds and an "add sound" tile. Styling
-uses a matte-black disc, thin grey ring, off-white monospace labels, and a
-single red accent dot — matching Nothing OS's dot-matrix look.
+MemeMedia is an Android home-screen soundboard with a compact, Nothing OS-inspired 2×2 widget. Flip through bundled meme sounds, play a sound without opening the app, and add or remove personal audio files from the companion screen.
 
-## Open it
-1. Android Studio → **Open** → select this `NothingSoundWidget` folder.
-2. Let Gradle sync (it will download the Android Gradle Plugin + Kotlin
-   plugin listed in `build.gradle`).
-3. Run the `app` module on a device/emulator (API 26+).
-4. Long-press the home screen → Widgets → "Sound Widget" → drag it on.
+## Features
 
-## Add your actual sound files
-The project ships with no audio (I can't attach binary audio in this
-environment). Drop your files into `app/src/main/res/raw/` using these exact
-names (any of mp3/ogg/wav, just keep the base name):
+- 2×2 home-screen widget with a matte-black, dot-matrix-inspired design.
+- Swipeable `StackView` deck for the built-in sounds and the **Add sound** tile.
+- Background playback through `SoundPlayService`; a normal widget tap does not open an activity.
+- Built-in sounds: `faah`, `bruh`, `vine boom`, and `airhorn`.
+- Import, name, preview, and remove custom audio files. Imported files are copied to the app's private storage.
+- Graceful handling of a missing bundled resource or corrupt saved sound list.
 
-- `faah.mp3` — plays on the default/first tap
-- `bruh.mp3`
-- `vine_boom.mp3`
-- `airhorn.mp3`
+## Requirements
 
-If a file is missing, tapping that tile just does nothing (no crash) — so
-you can add sounds incrementally. Users can also add their own on-device via
-the widget's "add sound" tile, which opens a tiny picker screen — those are
-copied into app storage and don't need rebuilding the app.
+- Android Studio with JDK 17.
+- Android device or emulator running Android 8.0 (API 26) or later.
+- Android SDK 34 installed for building.
 
-## How the pieces fit together
-- **`SoundWidgetProvider`** — the widget itself. Builds the `RemoteViews`,
-  attaches the `StackView` adapter, and routes taps.
-- **`StackRemoteViewsService` / `SoundStackFactory`** — supplies each
-  swipeable "page" (faah / meme sounds / add-tile) to the `StackView`.
-- **`SoundPlayService`** — a headless service; a tap starts it with a sound
-  id, it plays that one sound via `MediaPlayer`, then stops itself. No UI
-  ever opens for a normal tap.
-- **`SoundRepository`** — the ordered sound list, built-ins + user-added,
-  persisted as JSON in `SharedPreferences`.
-- **`MainActivity`** — only opens when you tap the "add sound" tile (or
-  launch the app icon directly); lets you pick an audio file, name it, and
-  remove sounds you've added.
+## Quick start
 
-## One real platform limit, worth knowing up front
-Home-screen widgets render through `RemoteViews` inside the launcher's
-process, not your app's — so a widget can't run arbitrary custom
-touch/animation code the way a normal in-app view can. The only RemoteViews
-component with a native swipe/flick gesture is `StackView` (the same
-mechanism behind stock widgets like Play Books' "recently read" stack),
-which is what's used here. Its flip transition is the *system's* built-in
-animation — smooth and native-feeling, but not something you can restyle
-frame-by-frame from app code. If you want a fully custom swipe animation,
-that would need to live inside an app screen (e.g. an overlay/quick-settings
-tile) rather than a true home-screen widget.
+1. Open this `MemeMedia` folder in Android Studio and allow Gradle to sync.
+2. Select the `app` run configuration and run it on an API 26+ device or emulator.
+3. Long-press the launcher home screen, choose **Widgets**, then drag **Sound Widget** onto the home screen.
+4. Tap the current tile to play it. Swipe the widget to move through the sounds.
+5. On the **add sound** tile, tap to open the manager, then use the add button to choose an audio file and give it a name.
 
-## Tuning the Nothing look
-All colors live in `res/values/colors.xml` — `nothing_black`,
-`nothing_grey_ring`, `nothing_white`, `nothing_red`. The dot-matrix icons are
-plain vector drawables (`ic_dot_wave.xml`, `ic_dot_meme.xml`,
-`ic_dot_add.xml`) built from circles, so they're easy to recolor or resize
-without needing image assets.
+## Bundled sounds
+
+Built-in audio lives in [`app/src/main/res/raw`](app/src/main/res/raw). Android resource names must use lowercase letters, numbers, and underscores. To replace a bundled sound, keep one of these base names and use a supported audio format such as MP3, OGG, or WAV:
+
+- `faah` — first/default widget sound
+- `bruh`
+- `vine_boom`
+- `airhorn`
+
+Missing bundled files are ignored safely, so the app remains usable while sounds are being replaced.
+
+## Project structure
+
+- `SoundWidgetProvider` configures and refreshes the widget and routes tile taps.
+- `StackRemoteViewsService` supplies the swipeable widget tiles.
+- `SoundPlayService` creates and releases `MediaPlayer` instances for playback.
+- `SoundRepository` stores the default and user-added sound entries in `SharedPreferences`.
+- `MainActivity` provides the custom-sound manager.
+
+## Build from the command line
+
+On Windows:
+
+```powershell
+.\gradlew.bat assembleDebug
+```
+
+The debug APK is written to `app/build/outputs/apk/debug/app-debug.apk`. The project uses Android Gradle Plugin 8.4.1, Kotlin 1.9.24, Gradle 8.6, and Java 17.
+
+## Widget limitation
+
+Android home-screen widgets use `RemoteViews`, so their flip animation is supplied by the launcher. The `StackView` supports native swipe navigation, but its animation cannot be customized frame by frame like an in-app view.
+
+## License
+
+This project is released under the [MIT License](LICENSE).

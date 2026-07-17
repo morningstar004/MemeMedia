@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.4.1" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.nothingsound.widget.MainActivity"
+                    boolean="true"/>
+                <entry
+                    name="com.nothingsound.widget.SoundWidgetProvider"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsRegisteredNonExported">
+                <entry
+                    name="com.nothingsound.widget.ACTION_SOUND_STOPPED (used to send a broadcast)"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.string.hint_pick_audio"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="7"
+            column="13"
+            startOffset="355"
+            endLine="7"
+            endColumn="35"
+            endOffset="377"/>
+        <location id="R.raw.readme_add_sounds_here"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/raw/readme_add_sounds_here.txt"/>
+        <location id="R.raw.faah"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/raw/faah.mp3"/>
+        <entry
+            name="model"
+            string="attr[selectableItemBackgroundBorderless(R)],color[nothing_red(U),nothing_white(U),nothing_black(U),nothing_black_widget(U),nothing_grey_ring(U),nothing_grey_text(U),nothing_black_soft(D)],drawable[ic_add_circle(U),ic_dot_add(U),ic_dot_meme(U),ic_dot_wave(U),ic_launcher_background(U),ic_launcher_foreground(U),ic_play_circle(U),ic_remove_circle(U),ic_stop_circle(U),widget_circle_bg(U),widget_preview(U)],font[ndot57(R)],id[sound_list(U),btn_add_sound(U),row_label(U),row_play_stop(U),row_delete(U),widget_list(U),empty_view(U),stack_item_root(U),tile_icon(U),tile_label(U)],layout[activity_main(U),item_sound_row(U),widget_sound(U),widget_stack_item(U)],mipmap[ic_launcher(U),ic_launcher_round(U)],raw[airhorn(D),bruh(D),faah(D),readme_add_sounds_here(D),vine_boom(D)],string[app_name(U),manage_sounds_title(U),action_add_sound(U),widget_description(U),hint_pick_audio(D),hint_name_sound(U)],style[Theme_NothingSound(U),Theme_MaterialComponents_DayNight_NoActionBar(R)],xml[widget_info(U)];8^1^2,9^1,a^2^1,b^1^2,c^3,d^1^2,e^2^3,f^1^2,10^1^2,11^4,12^3,1e^3^13^2a^2^5^0^2b^8,1f^2^0^e^f,20^11^6,21^11^4^b^2,22^c^d,23^c^d,2f^30^3^1^2^6,31^2c^20^12;;;"/>
+        <location id="R.raw.vine_boom"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/raw/vine_boom.mp3"/>
+        <location id="R.color.nothing_black_soft"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/colors.xml"
+            line="6"
+            column="12"
+            startOffset="249"
+            endLine="6"
+            endColumn="37"
+            endOffset="274"/>
+        <location id="R.raw.airhorn"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/raw/airhorn.mp3"/>
+        <location id="R.raw.bruh"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/raw/bruh.mp3"/>
+    </map>
+
+</incidents>

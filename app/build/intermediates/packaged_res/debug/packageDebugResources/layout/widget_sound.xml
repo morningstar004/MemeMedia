@@ -5,7 +5,7 @@
     android:background="@drawable/widget_circle_bg"
     android:padding="12dp">
 
-    <ListView
+    <StackView
         android:id="@+id/widget_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

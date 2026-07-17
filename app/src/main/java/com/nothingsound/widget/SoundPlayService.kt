@@ -77,11 +77,13 @@ class SoundPlayService : Service() {
 
             mp.setOnCompletionListener {
                 it.release()
+                player = null
                 notifyStopped()
                 stopSelf()
             }
             mp.setOnErrorListener { p, _, _ ->
                 p.release()
+                player = null
                 notifyStopped()
                 stopSelf()
                 true
@@ -97,7 +99,7 @@ class SoundPlayService : Service() {
     }
 
     private fun notifyStopped() {
-        sendBroadcast(Intent(ACTION_SOUND_STOPPED))
+        sendBroadcast(Intent(ACTION_SOUND_STOPPED).setPackage(packageName))
     }
 
     override fun onDestroy() {

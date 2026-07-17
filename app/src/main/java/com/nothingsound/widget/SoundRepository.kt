@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.core.content.edit
 import org.json.JSONArray
 import org.json.JSONObject
+import java.io.File
 
 /**
  * One entry in the widget's swipeable sound deck.
@@ -37,7 +38,7 @@ object SoundRepository {
     fun getAll(context: Context): List<SoundItem> {
         val prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         val raw = prefs.getString(KEY_SOUNDS, null)
-        val list = raw?.let { fromJson(it) } ?: defaults()
+        val list = raw?.let { runCatching { fromJson(it) }.getOrElse { defaults() } } ?: defaults()
         // The "+ add sound" tile always sits at the end of the deck.
         return list + SoundItem(id = ADD_TILE_ID, label = "add sound", isAddTile = true)
     }
@@ -51,8 +52,10 @@ object SoundRepository {
 
     fun removeSound(context: Context, id: String) {
         val prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-        val current = getAll(context).filterNot { (it.isAddTile || it.id == id) }
-        prefs.edit { putString(KEY_SOUNDS, toJson(current)) }
+        val current = getAll(context).filterNot { it.isAddTile }
+        current.firstOrNull { it.id == id }?.filePath?.let { File(it).delete() }
+        val remaining = current.filterNot { it.id == id }
+        prefs.edit { putString(KEY_SOUNDS, toJson(remaining)) }
     }
 
     fun findById(context: Context, id: String): SoundItem? =

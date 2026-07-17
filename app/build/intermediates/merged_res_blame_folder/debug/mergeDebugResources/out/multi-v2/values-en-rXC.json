@@ -4,7 +4,7 @@
             "outputFile": "com.nothingsound.widget.app-mergeDebugResources-33:/values-en-rXC/values-en-rXC.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\PRANJAL_01\\.gradle\\caches\\9.3.0\\transforms\\d90d087ed3da7625c5e0617227401676\\workspace\\transformed\\appcompat-1.7.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\PRANJAL_01\\.gradle\\caches\\transforms-4\\719fbbcf270bfc139476c984b0c1c56f\\transformed\\appcompat-1.7.0\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\PRANJAL_01\\.gradle\\caches\\9.3.0\\transforms\\fbc493c8e1b9bb2916ee6ad60b4859f2\\workspace\\transformed\\core-1.13.1\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "source": "C:\\Users\\PRANJAL_01\\.gradle\\caches\\transforms-4\\65253b1da493a2fe632cefc97bf60d8c\\transformed\\core-1.13.1\\res\\values-en-rXC\\values-en-rXC.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
