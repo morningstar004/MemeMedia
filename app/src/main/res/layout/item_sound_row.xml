@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/row_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/nothing_white"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:letterSpacing="0.05" />
+
+    <ImageView
+        android:id="@+id/row_play_stop"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_play_circle"
+        android:padding="8dp"
+        android:contentDescription="Play/Stop sound"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <ImageView
+        android:id="@+id/row_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_remove_circle"
+        android:padding="8dp"
+        android:contentDescription="Remove sound"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+</LinearLayout>

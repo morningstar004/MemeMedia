@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NothingSound" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/nothing_black</item>
+        <item name="colorPrimary">@color/nothing_red</item>
+        <item name="colorAccent">@color/nothing_red</item>
+        <item name="android:textColorPrimary">@color/nothing_white</item>
+        <item name="android:textColorSecondary">@color/nothing_grey_text</item>
+    </style>
+</resources>

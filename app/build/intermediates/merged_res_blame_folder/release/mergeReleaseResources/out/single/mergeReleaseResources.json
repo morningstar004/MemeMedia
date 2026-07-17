@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/raw_vine_boom.mp3.flat",
+        "source": "com.nothingsound.widget.app-main-36:/raw/vine_boom.mp3"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/drawable_widget_preview.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/drawable/widget_preview.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/drawable_ic_stop_circle.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/drawable/ic_stop_circle.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/raw_readme_add_sounds_here.txt.flat",
+        "source": "com.nothingsound.widget.app-main-36:/raw/readme_add_sounds_here.txt"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/drawable_widget_circle_bg.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/drawable/widget_circle_bg.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/drawable_ic_dot_wave.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/drawable/ic_dot_wave.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/xml_widget_info.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/xml/widget_info.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/raw_bruh.mp3.flat",
+        "source": "com.nothingsound.widget.app-main-36:/raw/bruh.mp3"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/drawable_ic_remove_circle.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/drawable/ic_remove_circle.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/layout_widget_stack_item.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/layout/widget_stack_item.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/layout_item_sound_row.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/layout/item_sound_row.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/layout_activity_main.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/drawable_ic_dot_add.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/drawable/ic_dot_add.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/raw_airhorn.mp3.flat",
+        "source": "com.nothingsound.widget.app-main-36:/raw/airhorn.mp3"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/drawable_ic_add_circle.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/drawable/ic_add_circle.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/layout_widget_sound.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/layout/widget_sound.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/drawable_ic_play_circle.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/drawable/ic_play_circle.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/raw_faah.mp3.flat",
+        "source": "com.nothingsound.widget.app-main-36:/raw/faah.mp3"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/font_ndot57.otf.flat",
+        "source": "com.nothingsound.widget.app-main-36:/font/ndot57.otf"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/drawable_ic_dot_meme.xml.flat",
+        "source": "com.nothingsound.widget.app-main-36:/drawable/ic_dot_meme.xml"
+    },
+    {
+        "merged": "com.nothingsound.widget.app-release-35:/font_ndot_57_font.ttf.flat",
+        "source": "com.nothingsound.widget.app-main-36:/font/ndot_57_font.ttf"
+    }
+]

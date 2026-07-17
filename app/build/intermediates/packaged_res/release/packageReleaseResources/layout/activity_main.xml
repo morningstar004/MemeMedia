@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nothing_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manage_sounds_title"
+            android:textColor="@color/nothing_white"
+            android:textSize="28sp"
+            android:fontFamily="@font/ndot57"
+            android:letterSpacing="0.1"
+            android:textAllCaps="true"
+            android:layout_marginBottom="16dp" />
+
+        <ListView
+            android:id="@+id/sound_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/nothing_grey_ring"
+            android:dividerHeight="1dp"
+            android:paddingTop="24dp"
+            android:clipToPadding="false" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_add_sound"
+        android:layout_width="85dp"
+        android:layout_height="84dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="@string/action_add_sound"
+        android:focusable="true"
+        android:padding="18dp"
+        android:src="@drawable/ic_add_circle" />
+
+</FrameLayout>

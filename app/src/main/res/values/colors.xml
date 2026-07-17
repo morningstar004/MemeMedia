@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nothing OS inspired: near-black base, off-white ink, single red accent -->
+    <color name="nothing_black">#000000</color>
+    <color name="nothing_black_widget">#1B1B1B</color>
+    <color name="nothing_black_soft">#141414</color>
+    <color name="nothing_grey_ring">#2B2B2B</color>
+    <color name="nothing_white">#F5F5F0</color>
+    <color name="nothing_grey_text">#9A9A94</color>
+    <color name="nothing_red">#D4231E</color>
+</resources>
