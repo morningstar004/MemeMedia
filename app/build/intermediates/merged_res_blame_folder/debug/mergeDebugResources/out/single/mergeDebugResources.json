@@ -8,12 +8,12 @@
         "source": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-main-37:\\drawable\\ic_remove_circle.xml"
     },
     {
-        "merged": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-debug-35:\\drawable_widget_circle_bg.xml.flat",
-        "source": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-main-37:\\drawable\\widget_circle_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-debug-35:\\drawable_ic_dot_wave.xml.flat",
         "source": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-main-37:\\drawable\\ic_dot_wave.xml"
+    },
+    {
+        "merged": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-debug-35:\\drawable_widget_circle_bg.xml.flat",
+        "source": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-main-37:\\drawable\\widget_circle_bg.xml"
     },
     {
         "merged": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-debug-35:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -36,12 +36,12 @@
         "source": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-main-37:\\drawable\\ic_play_circle.xml"
     },
     {
-        "merged": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-debug-35:\\layout_widget_stack_item.xml.flat",
-        "source": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-main-37:\\layout\\widget_stack_item.xml"
-    },
-    {
         "merged": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-debug-35:\\drawable_widget_preview.xml.flat",
         "source": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-main-37:\\drawable\\widget_preview.xml"
+    },
+    {
+        "merged": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-debug-35:\\layout_widget_stack_item.xml.flat",
+        "source": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-main-37:\\layout\\widget_stack_item.xml"
     },
     {
         "merged": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-debug-35:\\raw_faah.mp3.flat",
@@ -80,6 +80,10 @@
         "source": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-main-37:\\drawable\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "com.nothingsound.widget.app-debug-35:/layout_widget_stack_item.xml.flat",
+        "source": "com.nothingsound.widget.app-main-37:/layout/widget_stack_item.xml"
+    },
+    {
         "merged": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-debug-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -98,9 +102,5 @@
     {
         "merged": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-debug-35:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\PRANJAL_01\\.gradle\\daemon\\8.6\\com.nothingsound.widget.app-main-37:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "com.nothingsound.widget.app-debug-35:/layout_widget_sound.xml.flat",
-        "source": "com.nothingsound.widget.app-main-37:/layout/widget_sound.xml"
     }
 ]

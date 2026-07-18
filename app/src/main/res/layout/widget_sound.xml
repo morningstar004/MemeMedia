@@ -3,17 +3,16 @@
     android:layout_width="160dp"
     android:layout_height="160dp"
     android:layout_gravity="center"
-    android:padding="20px"
+    android:clipToOutline="true"
     android:background="@drawable/widget_circle_bg">
 
     <StackView
         android:id="@+id/widget_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
+        android:clipToPadding="true"
+        android:clipChildren="true"
         android:divider="@null"
-        android:layout_marginBottom="45px"
-        android:layout_marginStart="40px"
         android:dividerHeight="0dp"
         android:loopViews="true"
         android:scrollbars="none" />
