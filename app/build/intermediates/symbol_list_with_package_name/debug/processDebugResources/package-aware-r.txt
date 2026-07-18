@@ -1992,6 +1992,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color nothing_black
 color nothing_black_widget
+color nothing_black_widget_new
 color nothing_grey_ring
 color nothing_grey_text
 color nothing_red

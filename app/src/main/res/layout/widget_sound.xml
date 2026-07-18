@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/widget_circle_bg"
-    android:padding="12dp">
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:layout_gravity="center"
+    android:padding="20px"
+    android:background="@drawable/widget_circle_bg">
 
     <StackView
         android:id="@+id/widget_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:clipToPadding="false"
         android:divider="@null"
+        android:layout_marginBottom="45px"
+        android:layout_marginStart="40px"
         android:dividerHeight="0dp"
-        android:scrollbars="none"
-        android:clipToPadding="false" />
+        android:loopViews="true"
+        android:scrollbars="none" />
 
     <TextView
         android:id="@+id/empty_view"
@@ -20,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/app_name"
-        android:textColor="@color/nothing_grey_text" />
+        android:textColor="@color/nothing_grey_text"
+        android:visibility="gone" />
 
 </FrameLayout>

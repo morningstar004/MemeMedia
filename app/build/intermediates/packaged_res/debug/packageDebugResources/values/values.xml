@@ -2,6 +2,7 @@
 <resources>
     <color name="nothing_black">#000000</color>
     <color name="nothing_black_widget">#1B1B1B</color>
+    <color name="nothing_black_widget_new">#7F3E44</color>
     <color name="nothing_grey_ring">#2B2B2B</color>
     <color name="nothing_grey_text">#9A9A94</color>
     <color name="nothing_red">#D4231E</color>

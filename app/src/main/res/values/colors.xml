@@ -3,6 +3,7 @@
     <!-- Nothing OS inspired: near-black base, off-white ink, single red accent -->
     <color name="nothing_black">#000000</color>
     <color name="nothing_black_widget">#1B1B1B</color>
+    <color name="nothing_black_widget_new">#7F3E44</color>
     <color name="nothing_grey_ring">#2B2B2B</color>
     <color name="nothing_white">#F5F5F0</color>
     <color name="nothing_grey_text">#9A9A94</color>

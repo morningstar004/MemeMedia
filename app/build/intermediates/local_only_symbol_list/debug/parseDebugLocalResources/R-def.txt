@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 color nothing_black
 color nothing_black_widget
+color nothing_black_widget_new
 color nothing_grey_ring
 color nothing_grey_text
 color nothing_red
