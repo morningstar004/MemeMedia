@@ -69,7 +69,7 @@ class SoundWidgetProvider : AppWidgetProvider() {
                 val playIntent = Intent(context, SoundPlayService::class.java).apply {
                     putExtra(SoundPlayService.EXTRA_SOUND_ID, itemId)
                 }
-                context.startService(playIntent)
+                androidx.core.content.ContextCompat.startForegroundService(context, playIntent)
             }
         }
     }

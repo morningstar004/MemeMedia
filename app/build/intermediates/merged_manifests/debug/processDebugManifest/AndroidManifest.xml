@@ -8,6 +8,10 @@
         android:minSdkVersion="26"
         android:targetSdkVersion="34" />
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <permission
         android:name="com.nothingsound.widget.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -55,7 +59,8 @@
         <!-- Plays a sound when the widget is tapped; no UI, dies as soon as playback ends -->
         <service
             android:name="com.nothingsound.widget.SoundPlayService"
-            android:exported="false" />
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
 
         <!-- Feeds the StackView its rows of sound tiles -->
         <service
